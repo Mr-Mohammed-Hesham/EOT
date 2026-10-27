@@ -1,0 +1,6 @@
+{
+  "name": "منصة الهياكل الوزارية | Mr. Mohammed Hesham",
+  "description": "منصة أكاديمية مستقلة للهياكل الامتحانية مقسمة حسب السنة والفصل والمادة وصفحات الأسئلة بإشراف م. محمد هشام.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
