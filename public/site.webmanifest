@@ -1,0 +1,25 @@
+{
+  "name": "منصة الهياكل الوزارية | Mr. Mohammed Hesham",
+  "short_name": "منصة الهياكل",
+  "description": "منصة الهياكل الامتحانية الرسمية المقسمة حسب السنة والفصل والمادة وصفحات الأسئلة بإشراف م. محمد هشام.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090d16",
+  "theme_color": "#090d16",
+  "dir": "rtl",
+  "lang": "ar",
+  "icons": [
+    {
+      "src": "/favicon.svg?v=4u-eot",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.svg?v=4u-eot",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

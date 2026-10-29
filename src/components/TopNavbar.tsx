@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, RefreshCw, X } from 'lucide-react';
 import { AppView, Language } from '../types/eot';
+import { EotPlatformLogo } from './EotPlatformLogo';
 
 interface TopNavbarProps {
   activeView: AppView;
@@ -31,17 +32,20 @@ export const TopNavbar: React.FC<TopNavbarProps> = ({
   return (
     <header className="sticky top-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-colors">
       <div className="max-w-[1360px] mx-auto flex items-center justify-between gap-8 px-4 sm:px-6 lg:px-8 h-16">
-        {/* Zone 1: Single text element wordmark */}
+        {/* Zone 1: Single brand lockup (Logo + 1-line wordmark) */}
         <a
           href="#hub"
           onClick={(e) => {
             e.preventDefault();
             onSelectView('hub');
           }}
-          className="text-base sm:text-lg font-black tracking-tight text-slate-900 dark:text-white whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-500"
+          className="inline-flex items-center gap-2.5 text-base sm:text-lg font-black tracking-tight text-slate-900 dark:text-white whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-500"
         >
-          <span className="text-amber-500">Mr. Mohamed</span>{' '}
-          <span>{isEn ? 'Hesham · EOT' : 'Hesham · الهياكل'}</span>
+          <EotPlatformLogo className="w-8 h-8 sm:w-9 sm:h-9 shrink-0" />
+          <span>
+            <span className="text-amber-500">Mr. Mohamed</span>{' '}
+            <span>{isEn ? 'Hesham · EOT' : 'Hesham · الهياكل'}</span>
+          </span>
         </a>
 
         {/* Zone 2: 4 concise single-line text navigation links */}

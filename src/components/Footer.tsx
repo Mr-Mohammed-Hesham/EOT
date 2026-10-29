@@ -1,6 +1,7 @@
 import React from 'react';
-import { Award, GraduationCap, ShieldCheck } from 'lucide-react';
+import { Award, ShieldCheck } from 'lucide-react';
 import { Language } from '../types/eot';
+import { EotPlatformLogo } from './EotPlatformLogo';
 
 interface FooterProps {
   language: Language;
@@ -13,8 +14,8 @@ export const Footer: React.FC<FooterProps> = ({ language }) => {
     <footer className="mt-auto border-t border-slate-200/80 dark:border-slate-800/80 bg-white/80 dark:bg-slate-900/70 backdrop-blur-md transition-colors py-6 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1360px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-start">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 to-orange-500 text-slate-950 flex items-center justify-center shrink-0 shadow-xs">
-            <GraduationCap className="w-5 h-5" aria-hidden="true" />
+          <div className="w-11 h-11 rounded-xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200/80 dark:border-slate-700/80 flex items-center justify-center p-1 shrink-0 shadow-xs">
+            <EotPlatformLogo className="w-9 h-9" />
           </div>
 
           <div className="text-start">

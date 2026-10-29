@@ -6,7 +6,6 @@ import {
   Calculator,
   CheckCircle2,
   Globe,
-  GraduationCap,
   Moon,
   Plus,
   RotateCcw,
@@ -35,6 +34,7 @@ import {
   getSubjectLabel,
   getTermLabel,
 } from '../data/eotCurricula';
+import { EotPlatformLogo } from './EotPlatformLogo';
 import { OrbitalStructureLoader } from './OrbitalStructureLoader';
 
 interface CurriculaHubViewProps {
@@ -106,11 +106,11 @@ export const CurriculaHubView: React.FC<CurriculaHubViewProps> = ({
           {/* Editorial & Identity Column */}
           <div className="lg:col-span-7 p-6 sm:p-8 lg:p-10 flex flex-col justify-between gap-6">
             <div className="space-y-5">
-              {/* Top Controls Row: Vector Emblem + Theme/Language Switches */}
+              {/* Top Controls Row: Custom Platform Logo + Theme/Language Switches */}
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <div className="flex items-center gap-3">
-                  <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 text-slate-950 flex items-center justify-center shadow-md shadow-amber-500/20 shrink-0">
-                    <GraduationCap className="w-5 h-5" aria-hidden="true" />
+                  <div className="w-12 h-12 rounded-2xl bg-white/95 dark:bg-[#0f172a] border border-amber-400/35 dark:border-amber-500/25 flex items-center justify-center p-1.5 shadow-sm shrink-0">
+                    <EotPlatformLogo className="w-full h-full" />
                   </div>
                   <div>
                     <div className="flex flex-wrap items-center gap-1.5 text-xs text-slate-600 dark:text-slate-300">
